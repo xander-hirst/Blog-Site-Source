@@ -1,0 +1,141 @@
+* {
+    font-family : "Open Sans", sans-serif;
+}
+body {
+    background: #0f0f0f;
+    background-image:  linear-gradient(to bottom, #292929, black);
+    margin: 0px;
+}
+
+.content {
+    background-color: #292929;
+    width: 60%;
+    padding: 60px;
+    margin: auto;
+    color: #9c9c9c;
+    border: 10px;
+    border-left-style: ridge;
+    border-right-style: groove;
+    border-color: #242424;
+    border-top-style: none;
+    overflow: auto;
+
+}
+.content h1{
+    color: #a30000;
+    font-size: 60px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: #9c9c9c;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #9c9c9c;
+}
+.navbar li a:hover {
+    background-color:#111;
+}
+.active {
+    background-color: #a30000;
+}
+.sched {
+    float: left;
+    border-style: solid;
+    border-color: #9c9c9c;
+    border-collapse: collapse;
+}
+.sched td{
+    padding: 10px;
+    border-style: solid;
+    border-color: #9c9c9c;
+}
+.sched th{
+    padding: 10px;
+    border-style: solid;
+    border-color: #9c9c9c
+}
+.earnings td {
+    padding: 10px;
+}
+.earnings th {
+    padding: 11px;
+}
+.earnings {
+    float: left;
+}
+.tierlist {
+    border-style: solid;
+    border-color: #9c9c9c;
+    border-collapse: collapse;
+}
+.tierlist tr{
+    border-style: solid;
+    border-color: #9c9c9c;
+}
+.respond {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 96%;
+    border: 3px solid black;
+    line-height: 10px;
+    padding: 20px;
+    margin-right:100px;
+}
+.respond label{
+    text-align: left;
+    width: 150px;
+    margin-bottom: 30px;
+}
+.respond input{
+    width: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.respond textarea{
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+hr{
+    border: 1px solid black;
+}
+.quiz input[type=text] {
+    width: 30%;
+}
+.quiz input[type=submit] {
+    margin-top: 15px;
+    width: 20%;
+}
+#container {
+    width: 258px;
+    height: 146px;
+    padding: 10px;
+    border: 3px solid black;
+    margin: auto;
+}
+#selection div{
+    width: 258px;
+    height: 146px;
+    padding: 10px;
+    border : 3px solid black;
+}
+.gamebuttons {
+    text-align:center;
+}
+.game p{
+    text-align:center;
+}
+
+

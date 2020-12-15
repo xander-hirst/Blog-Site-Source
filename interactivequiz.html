@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <title>Hero Guessing Game</title>
+  <link href="localstyle.css" type="text/css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="heroguess.js" type="text/javascript"></script>
+</head> 
+
+<body>
+  <div class="navbar">
+  <ul>
+    <li><a href="home.html"><img src="images/Dota-2-Logo.png" width="17" height="17" alt="dota logo"></a></li>
+    <li><a href="favhero1.html">Xander's Favorite Hero</a></li>
+    <li><a href="favhero2.html">Jake's Favorite Hero</a></li>
+    <li><a href="tourneysched.html">Tournament Schedule</a></li>
+    <li><a href="tierlist.php">Neutral Item Tierlist</a></li>
+    <li><a href="dotaquiz.php">DotA Quiz</a></li>
+    <li><a href="interactivequiz.html" class="active">Hero Guessing Game</a></li>
+  </ul>
+  </div>
+  
+  <div class="content">
+    <h1>Hero Guessing Game</h1>
+    <img src="images/dotaheros.jpeg" alt="image of several dota 2 heroes">
+    <div class="game">
+      <p>Drag the hero's portrait who matches the description to the empty box and press submit</p>
+      <div id = "container" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+      <br>
+      <div class="gamebuttons">
+	<input type="button" value="New" id="new">
+	<input type="button" value="Clear" id="clear">
+	<input type="button" value="Submit" id="submit">
+      </div>
+      <p id="solution" hidden>solution</p>
+      <p id="desc">description</p>
+      <hr>
+      <div id="selection">
+	<table>
+	  <tr>
+	    <td><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "axe" src = "images/axe.png" draggable = "true" ondragstart = "drag(event)" title = "Axe"></div></td>
+	    <td><div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "earthshaker" src = "images/shaker.png" draggable = "true" ondragstart = "drag(event)" title = "Earth Shaker"></div></td>
+	    <td><div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "nightstalker" src = "images/ns.png" draggable = "true" ondragstart = "drag(event)" title = "Night Stalker"></div></td>
+	    <td><div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "tidehunter" src = "images/tide.png" draggable = "true" ondragstart = "drag(event)" title = "Tide Hunter"></div></td>
+	  </tr>
+	  <tr>
+	    <td><div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "juggernaut" src = "images/jugg.png" draggable = "true" ondragstart = "drag(event)" title = "Juggernaut"></div></td>
+	    <td><div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "morphling" src = "images/morph.png" draggable = "true" ondragstart = "drag(event)" title = "Morphling"></div></td>
+	    <td><div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "lonedruid" src = "images/druid.png" draggable = "true" ondragstart = "drag(event)" title = "Lone Druid"></div></td>
+	    <td><div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "razor" src = "images/razor.png" draggable = "true" ondragstart = "drag(event)" title = "Razor"></div></td>
+	  </tr>
+	  <tr>
+	    <td><div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "crystalmaiden" src = "images/maiden.png" draggable = "true" ondragstart = "drag(event)" title = "Crystal Maiden"></div></td>
+	    <td><div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "bane" src = "images/bane.png" draggable = "true" ondragstart = "drag(event)" title = "Bane"></div></td>
+	    <td><div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "puck" src = "images/puck.png" draggable = "true" ondragstart = "drag(event)" title = "Puck"></div></td>
+	    <td><div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"><img id = "witchdoctor" src = "images/wd.png" draggable = "true" ondragstart = "drag(event)" title = "Witch Doctor"></div></td>
+	  </tr>
+	</table>
+      </div><!--/selection-->
+      
+    </div><!--/game-->
+  </div><!--/content-->
+</body>
