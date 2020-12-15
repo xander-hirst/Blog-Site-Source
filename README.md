@@ -10,7 +10,9 @@ This is done in javascript and can be found in interactivequiz.html and herogues
 The quiz uses form validation through a MySQL backend using PHP and can be found in dotaquiz.php
 <img src="images/quiz.png" width=600>
 
-The tierlist has a safe commenting system accomplished through PHP that prevents MySQL, HTML, and Javascript injection. This can be found in tierlist.php
+The tierlist has a safe commenting system accomplished through PHP that prevents MySQL, HTML, and Javascript injection.
+
+ This can be found in tierlist.php
 <img src="images/tierlist.png" width=600>
 <img src="images/tierlistcomments.png" width=600>
 
